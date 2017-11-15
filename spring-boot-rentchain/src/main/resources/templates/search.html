@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title></title>
+
+<div th:replace="fragments/header :: header-css" />
+
+</head>
+<body>
+
+	<div th:replace="fragments/header :: header"></div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-3 col-md-2 sidebar">
+				<ul class="nav nav-sidebar">
+					<li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+					<li><a th:href="@{/search}">Pesquisar</a></li>
+					<li><a th:href="@{/search}">Assinatura Contrato</a></li>
+					<li><a th:href="@{/home}">Contato</a></li>
+				</ul>
+			</div>
+
+
+			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2">
+
+				<form th:action="@{/search}" th:object="${preferencias}"
+					method="post">
+					
+					<div class="form-group blu-margin">
+						<select class="form-control" th:object="${segmentoSelecionado}"
+							id="dropOperator">
+							<option th:each="segmento : ${segmentos}"
+								th:value="${segmento.id}" th:text="${segmento.nome}"></option>
+						</select>
+					</div>
+
+
+					<input type="text" id="txt" name="texto" />
+					<button type="submit">Add</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div th:replace="fragments/footer :: footer"></div>
+
+</body>
+
+</html>
+

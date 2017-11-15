@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Spring Boot Thymeleaf + Spring Security</title>
+
+<div th:replace="fragments/header :: header-css"></div>
+
+<script th:inline="javascript"
+	src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDuC0oHTI_mwfwW2HBiClpEuvSUKO7R8mg&amp;sensor=false"></script>
+
+<script th:inline="javascript">
+        var geocoder = new google.maps.Geocoder();
+
+
+        function initialize() {
+            var latLng = new google.maps.LatLng(-34.397, 150.644);
+            var map = new google.maps.Map(document.getElementById('mapCanvas'), {
+             zoom: 8,
+             center: latLng,
+             mapTypeId: google.maps.MapTypeId.ROADMAP
+            });  
+        }
+
+        // Onload handler to fire off the app.
+        google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+
+</head>
+<body>
+	<div th:id="mapCanvas"></div>
+
+</body>
+
+
+
+</html>
+

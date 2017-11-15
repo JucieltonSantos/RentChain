@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>SmartRent</title>
+
+<div th:replace="fragments/header :: header-css" />
+
+</head>
+<body>
+
+	<div th:replace="fragments/header :: header"></div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-3 col-md-2 sidebar">
+				<ul class="nav nav-sidebar">
+					<li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+					<li><a th:href="@{/search}">Pesquisar</a></li>
+					<li><a th:href="@{/search}">Assinatura Contrato</a></li>
+					<li><a th:href="@{/home}">Contato</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+				
+				Produtos
+
+				
+			</div>
+		</div>
+	</div>
+
+	<!-- /.container -->
+
+	<div th:replace="fragments/footer :: footer"></div>
+</body>
+</html>

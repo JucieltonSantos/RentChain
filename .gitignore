@@ -1,0 +1,17 @@
+.exe
+.rar
+.gradle/
+.idea/
+.vscode/
+.settings/
+build/
+.classpath
+.project
+isomorphic/
+libs/
+node_modules/
+gradle/
+target/
+overrides/
+packages/
+.history/
