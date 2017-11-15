@@ -1,0 +1,71 @@
+/*!
+ * Start Bootstrap - Small Business (http://startbootstrap.com/template-overviews/small-business)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-small-business/blob/master/LICENSE)
+ */
+
+body {
+    padding-top: 54px;
+}
+
+.btn-instagram{
+	color:#ccc!important;
+	background-color: #3F729B;
+}
+.btn-facebook{
+	color:#ccc!important;
+	background-color: #3b5998;
+}
+.form-signin{
+	width: 350px;
+}
+.footerdark{
+	background-color: #343a40!important;
+}
+.btn-viajar{
+	background-color: #da910a!important;
+}
+.tithotel{
+	font-size: 20px;
+	text-align: center;
+	margin-left: 0px;
+	font-weight: bold;
+}
+.text10{
+	text-align: center;
+}
+.star{
+	color:#e8d217; 
+}
+.preco{
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+}
+.preco2{
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+	color:#ec0101;
+}
+.titpensado{
+	color: #2ace50;
+}
+.musica{
+	background-image: url("figura13.jpg")!important;
+	color: #ffffff;
+}
+.lazer{
+	background-image: url("figura14.jpg")!important;
+	color: #ffffff;
+}
+.gastronomia{
+	background-color: url("figura15.jpg")!important;
+	color: #ffffff;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+    }
+}
